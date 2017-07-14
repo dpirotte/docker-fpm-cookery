@@ -1,13 +1,13 @@
-DEBIAN_VERSIONS = wheezy jessie stretch
+VERSIONS = wheezy jessie stretch trusty xenial
 
 default: images
 
-dockerfiles: $(addprefix dockerfile-,$(DEBIAN_VERSIONS))
+dockerfiles: $(addprefix dockerfile-,$(VERSIONS))
 
 dockerfile-%:
-	sed "s/%%VERSION%%/$*/" Dockerfile.template > $*/Dockerfile
+	mkdir -p $* && sed "s/%%VERSION%%/$*/" Dockerfile.template > $*/Dockerfile
 
-images: $(addprefix debian-,$(DEBIAN_VERSIONS))
+images: $(addprefix debian-,$(VERSIONS))
 
 debian-%:
 	docker build -t dpirotte/fpm-cookery:$* $*
