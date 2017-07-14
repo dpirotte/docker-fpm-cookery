@@ -15,3 +15,5 @@ Tags correspond to the OS version.
 |Debian|Wheezy (7.x)|`wheezy`|
 |Debian|Jessie (8.x)|`jessie`, `latest`|
 |Debian|Stretch (9.x)|`stretch`|
+|Ubuntu|Trusty (14.04)|`trusty`|
+|Ubuntu|Xenial (16.04)|`xenial`|
