@@ -1,13 +1,11 @@
+DOCKER_REPO = dpirotte/fpm-cookery
 VERSIONS = wheezy jessie stretch trusty xenial
 
+export DOCKER_REPO
+
 default: build
-
-dockerfiles: $(addprefix dockerfile-,$(VERSIONS))
-
-dockerfile-%:
-	mkdir -p $* && sed "s/%%VERSION%%/$*/" Dockerfile.template > $*/Dockerfile
 
 build: $(addprefix build-,$(VERSIONS))
 
 build-%:
-	docker build -t dpirotte/fpm-cookery:$* $*
+	env IMAGE_TAG=$* bash hooks/build
