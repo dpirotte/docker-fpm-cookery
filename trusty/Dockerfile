@@ -1,6 +1,6 @@
 FROM buildpack-deps:trusty
 
-RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get -y install \
+RUN DEBIAN_FRONTEND=noninteractive apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install \
   ruby \
   ruby-dev \
   unzip \
