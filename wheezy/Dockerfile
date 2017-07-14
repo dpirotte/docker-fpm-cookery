@@ -1,4 +1,4 @@
-FROM buildpack-deps:%%VERSION%%
+FROM buildpack-deps:wheezy
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install \
   ruby \
