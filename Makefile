@@ -1,4 +1,4 @@
-VERSIONS = wheezy jessie stretch trusty xenial
+VERSIONS = wheezy jessie stretch buster trusty xenial bionic
 
 default: build
 

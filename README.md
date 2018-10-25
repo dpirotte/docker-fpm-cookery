@@ -13,7 +13,9 @@ Tags correspond to the OS version.
 |Distro|Version|Tag|
 |------|-------|---|
 |Debian|Wheezy (7.x)|`wheezy`|
-|Debian|Jessie (8.x)|`jessie`, `latest`|
-|Debian|Stretch (9.x)|`stretch`|
+|Debian|Jessie (8.x)|`jessie`|
+|Debian|Stretch (9.x)|`stretch`,`latest`|
+|Debian|Buster (10.x)|`buster`|
 |Ubuntu|Trusty (14.04)|`trusty`|
 |Ubuntu|Xenial (16.04)|`xenial`|
+|Ubuntu|Bionic (18.04)|`bionic`|
