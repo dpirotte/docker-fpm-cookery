@@ -1,0 +1,23 @@
+---
+sudo: required
+
+addons:
+  apt:
+    packages:
+      - docker-ce
+
+services:
+  - docker
+
+env:
+  - DISTRO=wheezy
+  - DISTRO=jessie
+  - DISTRO=stretch
+  - DISTRO=buster
+  - DISTRO=trusty
+  - DISTRO=xenial
+  - DISTRO=bionic
+
+script:
+  - make build-$DISTRO
+  - make test-$DISTRO
