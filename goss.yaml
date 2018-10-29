@@ -1,0 +1,18 @@
+---
+package:
+  ruby:
+    installed: true
+  ruby-dev:
+    installed: true
+  unzip:
+    installed: true
+command:
+  gem list fpm -i:
+    exit-status: 0
+    stdout:
+      - true
+  gem list fpm-cookery -i:
+    exit-status: 0
+    stdout:
+      - true
+
