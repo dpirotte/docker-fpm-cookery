@@ -1,5 +1,7 @@
 ---
 package:
+  bundler:
+    installed: true
   ruby:
     installed: true
   ruby-dev:

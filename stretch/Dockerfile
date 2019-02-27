@@ -1,6 +1,7 @@
 FROM buildpack-deps:stretch
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install \
+  bundler \
   ruby \
   ruby-dev \
   unzip \
